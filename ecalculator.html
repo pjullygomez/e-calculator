@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecalculator.css">
+    <title>E-Calculator</title>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div>
+            <h1>Online Calculator</h1>
+        </div>
+        <div class="calculator">
+
+            <div class="screen" id="class">
+                <input type="text" class="screen2" id="screen">
+                <!-- <div class="screen1"></div> -->
+                <!-- <div class="screen2" id="screen"></div> -->
+            </div>
+            <div class="buttons">
+                <button onclick="clr()" class="btns allclear" id="acbtn">AC</button>
+                <button onclick="cancel()" class="btns deletebtn" id="delbtn"> ⌫ </button>
+                <button onclick="calculate('%')" class=" btns operator " id="percentbtn "> %</button>
+                <button onclick="calculate('/')" class="btns operator" id="divbtn"> / </button>
+                <button onclick="calculate(7)" class="btns number" id="number"> 7 </button>
+                <button onclick="calculate(8)" class="btns number" id="number"> 8 </button>
+                <button onclick="calculate(9)" class="btns number" id="number"> 9 </button>
+                <button onclick="calculate('*')" class="btns operator" id="multbtn"> x </button>
+                <button onclick="calculate(4)" class="btns number" id="number"> 4 </button>
+                <button onclick="calculate(5)" class="btns number" id="number"> 5 </button>
+                <button onclick="calculate(6)" class="btns number" id="number"> 6 </button>
+                <button onclick="calculate('-')" class="btns operator" id="subtbtn"> - </button>
+                <button onclick="calculate(1)" class="btns number" id="number"> 1 </button>
+                <button onclick="calculate(2)" class="btns number" id="number"> 2 </button>
+                <button onclick="calculate(3)" class="btns number" id="number"> 3 </button>
+                <button onclick="calculate('+')" class=" btns operator " id="addbtn "> + </button>
+                <button onclick="calculate(0) " class="btns number " id="number "> 0 </button>
+                <button onclick="calculate('.') " class="btns number "> . </button>
+                <button onclick="total()" class="btns result" id="result"> = </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="ecalculator.js "></script>
+
+</body>
+
+
+
+</html>

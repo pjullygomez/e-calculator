@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 1px 1px 10px black;
+}
+
+.main {
+    /* background: linear-gradient(90deg, rgba(255, 164, 91, 1) 4%, rgba(255, 218, 119, 1) 31%, rgba(251, 246, 240, 1) 55%, rgba(251, 245, 237, 1) 63%, rgba(174, 230, 230, 1) 84%); */
+    background: linear-gradient(90deg, rgba(255, 164, 91, 1) 2%, rgba(251, 246, 240, 1) 38%, rgba(174, 230, 230, 1) 65%, rgba(184, 232, 231, 1) 70%, rgba(181, 231, 231, 1) 75%, rgba(174, 230, 230, 1) 88%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calculator {
+    width: 400px;
+    height: 680px;
+    /* background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(232, 232, 232, 1) 100%); */
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 1px 1px 10px black;
+    border-radius: 50px;
+}
+
+.screen {
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; */
+    margin: 15px 15px 0 15px;
+    height: 200px;
+    /* box-shadow: inset 1px 1px 10px white; */
+    border-radius: 50px 50px 0 0;
+    /* background-color: #3797A4; */
+}
+
+
+/* .screen1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: lightcoral;
+    border-bottom: 1px solid white;
+    height: 80px;
+    width: 100%;
+    border: none;
+} */
+
+input[type="text"] {
+    font-size: 30px;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .15);
+    display: flex;
+    border: 1px solid white;
+    border-radius: 50px 50px 0 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.buttons {
+    margin: 0 15px 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 450px;
+    /* background-color: grey; */
+    padding: 10px;
+    border-radius: 0 0 50px 50px;
+}
+
+#result {
+    grid-column: 3/5;
+}
+
+.btns {
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, .15);
+    margin: 10px;
+    border: 1px solid #3797A4;
+    border-radius: 50px;
+    box-shadow: 1px 1px 3px #3797A4;
+    color: #132C33;
+}
+
+.btns:hover {
+    cursor: pointer;
+    background-color: #D8E3E7;
+}
+
+.btns:active {
+    background-color: #3797A4;
+}
